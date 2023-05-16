@@ -1,0 +1,361 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/*gradient bg*/
+	background: rgb(17, 111, 90);
+	background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%) !important;
+}
+
+main {
+	margin-top: 5vh;
+	width: 100vw;
+	height: max-content;
+}
+
+main>div.title {
+	color: #333;
+}
+
+.container {
+	width: 90vw;
+	height: 130%;
+	margin: 0vh 5vw 5vh 5vw;
+	background-color: white;
+	border-radius: 40px;
+	padding-top: 15px;
+	box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+
+
+}
+
+.container-content {
+	width: 90vw;
+	height: max-content;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 7rem;
+	padding: 40px 40px;
+}
+
+div.main-header-title {
+	display: inline;
+	max-height: 76px;
+}
+
+div.main-header {
+	display: block;
+	align-items: center;
+}
+
+div.main-header>.ccc-logo-container {
+	display: flex;
+	margin: 15px 0 0 0;
+	justify-content: center;
+}
+
+div.main-header #ccc-logo {
+
+	height: 80px;
+}
+
+.main-header-title>h1 {
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	width: calc(max-content + 16px);
+}
+
+.main-header-title>p {
+	font-weight: 400;
+	text-align: center;
+	color: #333;
+	font-size: 20px;
+	width: calc(max-content + 16px);
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content {
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.img img {
+	width: 550px;
+}
+
+form {
+	width: 360px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+	transition: 0.5s ease;
+	padding: 25px;
+}
+
+.login-content img {
+	height: 100px;
+}
+
+.login-content h2 {
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one {
+	margin-top: 0;
+}
+
+.i {
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i {
+	transition: .3s;
+}
+
+.input-div>div {
+	position: relative;
+	height: 45px;
+}
+
+.input-div>div>h5 {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before,
+.input-div:after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #0b664b;
+	transition: .4s;
+}
+
+.input-div:before {
+	right: 50%;
+}
+
+.input-div:after {
+	left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+	width: 50%;
+}
+
+.input-div.focus>div>h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus>.i>i {
+	color: #0b664b;
+}
+
+.input-div>div>input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass {
+	margin-bottom: 4px;
+}
+
+a {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: .3s;
+}
+
+a:hover {
+	color: #0b664b;
+	margin-right: 2px;
+}
+
+a:active {
+	color: #199b65;
+	transition: .2s;
+}
+
+.btn {
+	/*login btn*/
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	/*Gradient*/
+	background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s ease;
+	font-weight: 600;
+}
+
+.btn:hover {
+	/*login btn animation*/
+	background-position: right;
+}
+
+@media screen and (max-height: 690px) {
+	.login-content {
+		max-height: 650px;
+	}
+
+	h2.title {
+		font-size: 2.2rem;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1335px) {
+
+	.container-content {
+		grid-gap: 6rem;
+	}
+}
+
+@media screen and (max-width: 1210px) {
+	.container {
+		height: max-content;
+	}
+
+	h2.title {
+		font-size: 2.5rem;
+		margin: 12px 0;
+	}
+
+	.img img {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.container-content {
+		grid-template-columns: 1fr;
+	}
+
+	.login-content {
+		justify-content: center;
+	}
+
+	.container-content {
+		grid-gap: 5rem;
+	}
+
+	.img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.login-content h2 {
+		font-size: 2.2rem;
+		margin: 8px 0;
+	}
+
+	.img img {
+		width: 380px;
+	}
+
+	.login-content img {
+		height: 80px;
+	}
+
+	.login-content h2 {
+		margin: 12px 0;
+		font-size: 2.4rem;
+	}
+
+	div.main-header>.ccc-logo-container {
+		display: flex;
+		margin: 8px 0 0 0;
+		justify-content: center;
+	}
+
+	div.main-header #ccc-logo {
+		height: 68px;
+	}
+
+	div.main-header h1 {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	h2.title {
+		font-size: 36px;
+	}
+
+	div.main-header p {
+		font-weight: normal;
+		text-align: center;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	form {
+		width: 300px;
+	}
+}

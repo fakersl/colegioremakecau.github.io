@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colégio Comercial de Caçapava - Painel de Login</title>
+    <link rel="stylesheet" type="text/css" href="./style/style-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <div class="main-header">
+                <div class="main-header-title">
+                    <h1>Colégio Comercial de Caçapava</h1>
+                    <p>Tradição com Metodologia Moderna de Ensino</p>
+                </div>
+                <div class="ccc-logo-container">
+                    <img id="ccc-logo" src="./imgs/logopainelaluno.png" alt="CCC LOGO">
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="img">
+                    <img src="./imgs/notebook.svg">
+                </div><!--img-->
+                <div class="login-content">
+                    <form action="index.html">
+                        <img src="./imgs/profile_pic.svg">
+                        <h2 class="title">Olá!</h2>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Identificação</h5>
+                                <input type="tel" id="identificacao2" class="input">
+                            </div>
+                        </div>
+                        <div class="input-div pass">
+                            <div class="i">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Senha</h5>
+                                <input type="password" id="senha2" class="input">
+                            </div>
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                    <input type="submit" class="btn" value="Login">
+                    </form><!--form-->
+                </div><!--login-content-->
+            </div>
+        </div><!--container-->
+    </main>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <!-- TESTANDO APENAS, SE DER ERRO APAGA DAQ PRA BAIXO -->
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); //Impedir envio formulário
+            
+            var identificacao2 = document.getElementById("identificacao2").value;
+            var senha2 = document.getElementById("senha2").value;
+
+            //Verificar o que o usuário digitou
+            if (Identificação === "15" && Senha === "teste") {
+                alert("Login realizado com sucesso!");
+                window.location.href = "index2.html";
+                } else {
+                    alert("Usuário ou senha inválidos!");
+                }
+        });
+    </script>
+</body>
+</html>

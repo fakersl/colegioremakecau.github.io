@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*gradient bg*/
+    background: rgb(17, 111, 90);
+    background: linear-gradient(164deg, rgba(17, 111, 90, 1) 0%, rgba(11, 102, 75, 1) 40%, rgba(13, 107, 67, 1) 75%, rgba(15, 111, 69, 1) 100%) !important;
+}
+
+main {
+    margin-top: 5vh;
+    width: 100vw;
+    height: max-content;
+}
+
+main>.title {
+    color: #333;
+}
+
+.container-main {
+    width: 90vw;
+    height: 130%;
+    margin: 0vh 5vw 5vh 5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding-top: 15px;
+    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.main-header-title {
+    display: inline;
+    max-height: 76px;
+}
+
+.main-header {
+    display: block;
+    align-items: center;
+}
+
+.main-header>.ccc-logo-container {
+    display: flex;
+    margin: 15px 0 0 0;
+    justify-content: center;
+}
+
+.main-header #ccc-logo {
+
+    height: 80px;
+}
+
+.main-header-title>h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    width: calc(max-content + 16px);
+}
+
+.main-header-title>p {
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    width: calc(max-content + 16px);
+}
+
+.container-content {
+    width: 90vw;
+    height: max-content;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr;
+    grid-gap: 0 40px;
+}
+
+.student {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: max-content;
+    width: 250px;
+    box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
+    padding: 30px 20px 20px 20px;
+    border-radius: 25px;
+    margin: 0 0 40px 0;
+    max-height: max-content;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.student>#student-img {
+    height: 150px;
+}
+
+.student>h3 {
+    text-align: center;
+}
+
+.social-media {
+    margin: 7px auto 0 auto;
+    width: max-content;
+    cursor: default;
+    display: flex;
+    margin-top: 7px;
+}
+
+.social-media .icon {
+    transition: .5s;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.icon #whatsapp {
+    margin: 0;
+}
+
+.bio {
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 240px;
+}
+
+.bio>h4 {
+    color: #333;
+    font-size: 16px;
+}
+
+.bio>p {
+    font-size: 14px;
+    color: #555;
+}
+
+.my-account>button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    /*Gradient*/
+    background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s ease;
+    font-weight: 600;
+}
+
+.my-account>button:hover {
+    background-position: right;
+}
+
+.my-account>button>a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.people {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    width: max-content;
+    border-bottom: 2px solid #333;
+    margin-bottom: 16px;
+}
+
+img#msg-pic {
+    width: 40px;
+    margin: 5px 15px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-right: 5px;
+}
+
+.table img {
+    cursor: pointer;
+}
+
+.msg-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.msg-container>.msg-title {
+    display: flex;
+    justify-content: center;
+}
+
+.msg-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.files-container {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.files-container>.files-title {
+    display: flex;
+    justify-content: center;
+}
+
+.employees-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: block;
+    margin: 0 auto;
+}
+
+.students-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 40px;
+    display: block;
+    margin: 40px auto 40px auto;
+}
+
+img {
+    height: 40px;
+    margin: 2px;
+}
+
+.scroll {
+    height: 200px;
+    overflow-y: auto;
+    width: 223px;
+}
+
+.msg {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+.msg-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.msg-img>img {
+    width: 135px;
+}
+
+.msg-img>h4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: max-content;
+    display: flex;
+}
+
+.msg-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 25px 0 0 0;
+}
+
+.msg-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 20px 0 0 0;
+}
+
+.msg-btn {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    display: block;
+    width: max-content;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*Gradient*/
+    background-image: linear-gradient(to right, #199b65, #0b664b, #168658);
+    background-size: 200%;
+    transition: .5s ease;
+}
+
+.msg-btn:hover {
+    background-position: right;
+}
+
+.msg-example {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.files-example {
+    padding: 30px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.files-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 25px 0 0 0;
+}
+
+#sender, #date{
+    display: block;
+}
+.sender-date {
+    display: inline-block;
+    margin: auto 0 auto 20px;
+}
+
+.file-title {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+/*Cada linha das tabelas de funcionários e colegas de classe*/
+.line1 {
+    grid-row-start: 1;
+}
+
+.line2 {
+    grid-row-start: 2;
+}
+
+.line3 {
+    grid-row-start: 3;
+}
+
+.line4 {
+    grid-row-start: 4;
+}
+
+.line5 {
+    grid-row-start: 5;
+}
+
+.line6 {
+    grid-row-start: 6;
+}
+
+.line7 {
+    grid-row-start: 7;
+}
+
+.line8 {
+    grid-row-start: 8;
+}
