@@ -27,7 +27,7 @@
                     <img src="./imgs/notebook.svg">
                 </div><!--img-->
                 <div class="login-content">
-                    <form action="index.html">
+                    <form action="index2.html" id="login-form" method="post">
                         <img src="./imgs/profile_pic.svg">
                         <h2 class="title">Olá!</h2>
                         <div class="input-div one">
@@ -36,7 +36,7 @@
                             </div>
                             <div class="div">
                                 <h5>Identificação</h5>
-                                <input type="tel" id="identificacao2" class="input">
+                                <input type="tel" id="identificacao2" class="input" required>
                             </div>
                         </div>
                         <div class="input-div pass">
@@ -45,7 +45,7 @@
                             </div>
                             <div class="div">
                                 <h5>Senha</h5>
-                                <input type="password" id="senha2" class="input">
+                                <input type="password" id="senha2" class="input" required>
                             </div>
                         </div>
                         <a href="#">Esqueceu sua senha?</a>
@@ -65,9 +65,10 @@
             var senha2 = document.getElementById("senha2").value;
 
             //Verificar o que o usuário digitou
-            if (Identificação === "15" && Senha === "teste") {
+            if (identificacao2 === "15" && senha2 === "1234") {
                 alert("Login realizado com sucesso!");
-                window.location.href = "https://fakersl.github.io/colegioremakecau.github.io/index2.html?";
+                //Ir pra pág principal! =)
+                window.location.href = "index2.html";
                 } else {
                     alert("Usuário ou senha inválidos!");
                 }
